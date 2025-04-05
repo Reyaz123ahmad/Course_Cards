@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* filter part */
+.filter{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+.filter-btn{
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: .5rem .8rem;
+    color: #ffffff;
+    background-color: #252734;
+    border-radius: 4px;
+    border: none;
+}
+
+
+/* card part */
+
+.card{
+    background-color: #2a2b44;
+    color: #ffffff;
+    font-family: sans-serif;
+    width: 30%;
+    /* padding: 1rem 1rem 0 1rem; */
+    border-radius: 6px;
+    position: relative;
+    
+}
+.card-content{
+    padding: 1rem;
+}
+.card-head{
+    font-size: 1.2rem;
+}
+.card-para{
+    line-height: 1.6rem;
+}
+.image{
+    width: 100%;
+    
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+/* cards part */
+.cards{
+   
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+
+/* nav part */
+.navbar{
+    background-color: #22223b;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-head{
+    font-size: 1.8rem;
+    color: #ffffff;
+    
+}
+
+
+.heart{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: 3%;
+    bottom: 40%;
+    
+}
+.heart button{
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+@media(max-width:450px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .filter{
+        flex-wrap: wrap;
+    }
+    .filter-btn{
+        font-size:1rem;
+    }
+}
+
+
+@media(max-width:1050px){
+    .cards{
+        flex-wrap: wrap;
+        
+    }
+    .card{
+        width:48.5%
+    }
+    .card-head{
+        font-size: 1.13rem;
+    }
+    .card-para{
+        font-size: .95rem;
+    }
+}
