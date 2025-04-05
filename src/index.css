@@ -4,6 +4,12 @@
     box-sizing: border-box;
     
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #4a4e69;
+}
+
 
 /* filter part */
 .filter{
@@ -125,12 +131,19 @@
 
 
 @media(max-width:1050px){
+    .app{
+        height: 100vh;
+        
+    }
     .cards{
+        width: 84%;
         flex-wrap: wrap;
+        align-items: center;
+        
         
     }
     .card{
-        width:48.5%
+        width:100%
     }
     .card-head{
         font-size: 1.13rem;
